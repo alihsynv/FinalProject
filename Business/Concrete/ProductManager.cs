@@ -50,6 +50,8 @@ namespace Business.Concrete
 
         }
 
+
+        //[CacheAspect]
         public IDataResult<List<Product>> GetAll()
         {
             return new SuccessDataResult<List<Product>>(_productDal.GetAll(), Messages.ProductsListed);
